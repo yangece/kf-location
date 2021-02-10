@@ -2,8 +2,8 @@
 # input from subspace method
 
 from math import *
-from dfl import *
-from spin import *
+# from dfl import *
+# from spin import *
 from pylab import *
 from time import sleep
 from quickSave import *
@@ -19,10 +19,9 @@ rcParams.update(params)
 ftm = 0.3048
 pi = 3.1415926
 
-vrti_map_file = '../output/sub/House_sub_yang_k36.txt' # use map
-vrti_map_file = '../output/sub/House_sub_yang_k0.txt' # use map
-vrti_interp_file = '../output/House_interp_yang.txt'
-configFile = '../house_may_2010.cfg'
+vrti_map_file = './House_sub_yang_k0.txt' # use map
+vrti_interp_file = './House_interp_yang.txt'
+configFile = './house_may_2010.cfg'
 #fig_name = 'track_sub_yang_Q2_Cx1.eps'
 
 
