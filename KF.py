@@ -19,7 +19,7 @@ rcParams.update(params)
 ftm = 0.3048
 pi = 3.1415926
 
-vrti_map_file = './House_sub_yang_k0.txt' # use map
+vrti_map_file = './House_sub_yang_k36.txt' # use map
 vrti_interp_file = './House_interp_yang.txt'
 configFile = './house_may_2010.cfg'
 #fig_name = 'track_sub_yang_Q2_Cx1.eps'
@@ -161,11 +161,11 @@ nodePlot, = plot(nodes[:,0],nodes[:,1],'k.',markersize=20)
 
 knownPlot = plot(interpX[startP:len(interpX)], interpY[startP:len(interpY)],'g:', linewidth=2)
 rtiPlot = plot(rti_x[startP: len(rti_x)], rti_y[startP: len(rti_y)],'b-', linewidth=2)
-legend((knownPlot, rtiPlot), ('Known path','Tracking estimates'), numpoints=1, loc=(0.35,0.92))
+# legend((knownPlot, rtiPlot), ('Known path','Tracking estimates'), numpoints=1, loc=(0.35,0.92))
 xlim((-1,10)),ylim((-1,9))
 xlabel('X (m)'); ylabel('Y (m)')
 
-#savefig(fig_name)
+savefig("kf.png")
 
 
 #file_s = open("KF_s_yang_sub_k0_test.txt", 'w')
